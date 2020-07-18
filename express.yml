@@ -3,8 +3,8 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    name: javawebapp
-  name: java-controller
+    name: expresscart1
+  name: expresscart1
 spec:
   replicas: 1
   template:
@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - image: saikrishna01/expresscart1:latest
-        name: javawebapp
+        name: express
         ports:
-        - name: javawebapp
+        - name: express
           containerPort: 8080  
 ---
 # Node Port Service
